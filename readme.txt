@@ -13,7 +13,8 @@ update file:
 
 get history record:
 git log
-git log --pretty=online	#clear view of history record with commit id number
+git log --pretty=oneline	#clear view of history record with commit id number
+git reflog	#this will record every command with commit id number
 
 reset file to last version and undo reset operation:
 git reset --hard HEAD^
