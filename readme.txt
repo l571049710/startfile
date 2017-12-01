@@ -56,3 +56,15 @@ git checkout master
 
 bring changes in new branch to old branch:
 git merge BRANCHNAME
+
+delete branch:
+git branch -d BRANCHNAME
+
+hide changes in working directory:
+git stash
+
+checkout changes in stash:
+git stash list
+
+bring changes in stash back:
+git stash pop
