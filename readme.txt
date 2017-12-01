@@ -41,12 +41,13 @@ push changes in repository to GitHub:
 git push origin master
 
 clone repository on GitHub to PC:
-git clone git@github.com:GITHUB_USER_NAME/REPOSITORY_NAME.git
+git clone git@github.com:GITHUB_USER_NAME/REPOSITORY_NAME.git	#this command can only clone master branch
+git checkout -b BRANCH_NAME REMOTE_NAME/BRANCH_NAME	#this command will create branch and clone branch from GitHub repository 
 
 create new branch and switch to it:
-git checkout -b BRANCHNAME	#-b means create and switch to new branch
-git branch BRANCHNAME
-git checkout BRANCHNAME	#those two commands equals to the first one
+git checkout -b BRANCH_NAME	#-b means create and switch to new branch
+git branch BRANCH_NAME
+git checkout BRANCH_NAME	#those two commands equals to the first one
 
 check branches:
 git branch
@@ -55,10 +56,10 @@ switch back to old branch:
 git checkout master
 
 bring changes in new branch to old branch:
-git merge BRANCHNAME
+git merge BRANCH_NAME
 
 delete branch:
-git branch -d BRANCHNAME
+git branch -d BRANCH_NAME
 
 hide changes in working directory:
 git stash
@@ -71,3 +72,8 @@ git stash pop stash@{NUM}
 git stash apply stash@{NUM}
 git stash drop stash@{NUM}	#those two commands equal to the first command
 
+checkout information of GitHub repository:
+git remote -v
+
+push branch to GitHub repository:
+git push REMOTE_NAME BRANCH_NAME
