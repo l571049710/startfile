@@ -67,7 +67,7 @@ checkout changes in stash:
 git stash list
 
 bring changes in stash back:
-git stash pop
-git stash apply
-git stash drop	#those two commands equal to the first command
+git stash pop stash@{NUM}
+git stash apply stash@{NUM}
+git stash drop stash@{NUM}	#those two commands equal to the first command
 
