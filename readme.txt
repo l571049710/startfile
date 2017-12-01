@@ -77,3 +77,7 @@ git remote -v
 
 push branch to GitHub repository:
 git push REMOTE_NAME BRANCH_NAME
+
+link branch on PC and GitHub repository:
+git branch --set-upstream BRANCH_NAME REMOTE_NAME/BRANCH_NAME
+git pull
