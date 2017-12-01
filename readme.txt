@@ -68,12 +68,12 @@ checkout changes in stash:
 git stash list
 
 bring changes in stash back:
-git stash pop stash@{NUM}
-git stash apply stash@{NUM}
-git stash drop stash@{NUM}	#those two commands equal to the first command
+git stash pop [stash@{NUM}]
+git stash apply [stash@{NUM}]
+git stash drop [stash@{NUM}]	#those two commands equal to the first command
 
 checkout information of GitHub repository:
-git remote -v
+git remote [-v]
 
 push branch to GitHub repository:
 git push REMOTE_NAME BRANCH_NAME
@@ -81,3 +81,24 @@ git push REMOTE_NAME BRANCH_NAME
 link branch on PC and GitHub repository:
 git branch --set-upstream BRANCH_NAME REMOTE_NAME/BRANCH_NAME
 git pull
+
+teamwork mode:
+1. try to push changes to GitHub
+2. if failed, update branch on PC
+3. fix conflict
+4. push changes to GitHub again
+
+create label:
+git tag TAG_NAME [COMMIT_ID_NUMBER]
+
+checkout label:
+git tag
+
+checkout label information:
+git show TAG_NAME
+
+add commit to label:
+git tag -a[/-s] TAG_NAME -m"COMMIT"	#-s for private key commit
+
+delete label:
+git tag -d TAG_NAME
