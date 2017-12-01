@@ -68,3 +68,6 @@ git stash list
 
 bring changes in stash back:
 git stash pop
+git stash apply
+git stash drop	#those two commands equal to the first command
+
