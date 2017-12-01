@@ -102,3 +102,10 @@ git tag -a[/-s] TAG_NAME -m"COMMIT"	#-s for private key commit
 
 delete label:
 git tag -d TAG_NAME
+
+push label to GitHub:
+git push REMOTE_NAME TAG_NAME[/--tags]	#--tages will push all unpushed label
+
+delete pushed label:
+git push origin :refs/tags/TAG_NAME	#you need to delete label on PC first
+
