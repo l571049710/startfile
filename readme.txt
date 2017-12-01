@@ -44,9 +44,15 @@ clone repository on GitHub to PC:
 git clone git@github.com:GITHUB_USER_NAME/REPOSITORY_NAME.git
 
 create new branch and switch to it:
-git checkout -b dev	#-b means create and switch to new branch
-git branch dev
-git checkout dev	#those two commands equals to the first one
+git checkout -b BRANCHNAME	#-b means create and switch to new branch
+git branch BRANCHNAME
+git checkout BRANCHNAME	#those two commands equals to the first one
 
 check branches:
 git branch
+
+switch back to old branch:
+git checkout master
+
+bring changes in new branch to old branch:
+git merge BRANCHNAME
